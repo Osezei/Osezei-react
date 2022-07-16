@@ -5,6 +5,7 @@ import Takestudio from "../images/PROJECT2.png";
 import Gym from "../images/PROJECT1.png";
 import Quote from "../images/quotees.png";
 import Navigation from "../components/Navigation";
+import "../index.css";
 
 const works = [
   {
@@ -43,45 +44,48 @@ const works = [
 export const Projects = () => {
   return (
     <>
-      <div className="container grid justify-center">
+      <div className="container text-center">
         <h3 className="animate__animated animate__zoomIn heading">
           <span className="opacity-50">Pro</span>jects
         </h3>
-        {/* <div className="underline"></div> */}
       </div>
       <section className="container mt-6 md:block lg:grid grid-cols-2 gap-4 place-items-center h-56">
         {works.map((work) => {
           const { id, stack, url, github, picture, title } = work;
           return (
-            <article
-              key={id}
-              className="animate__animated animate__slideInUp items-center"
-            >
-              <div className="picture-container md:mt-6">
-                <img src={picture} className="picture mb-2" />
-
-                <a
-                  href={url}
-                  className="overlay font-bold text-2xl text-[#fff]"
-                  target="_blank"
-                >
-                  {title}
-                </a>
-              </div>
-              <a
-                className="font-semibold text-lg text-[black] hover:underline"
-                target="_blank"
-                href={github}
+            <div className="pb-20">
+              <article
+                key={id}
+                className="animate__animated animate__slideInUp items-center"
               >
-                #Codes
-              </a>
-              <h3 className=" font-semibold text-lg  text-[black]">
-                Stack: {stack}
-              </h3>
-            </article>
+                <div className="picture-container md:mt-2">
+                  <img src={picture} className="picture mb-2" />
+
+                  <a
+                    href={url}
+                    className="overlay font-bold text-2xl text-[#fff]"
+                    target="_blank"
+                  >
+                    {title}
+                  </a>
+                </div>
+                <a
+                  className="font-semibold text-lg text-[black] hover:underline"
+                  target="_blank"
+                  href={github}
+                >
+                  #Codes
+                </a>
+                <h3 className=" font-semibold text-lg  text-[black]">
+                  Stack: {stack}
+                </h3>
+              </article>
+            </div>
           );
         })}
       </section>
+
+      <Navigation />
     </>
   );
 };
