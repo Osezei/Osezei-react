@@ -17,7 +17,7 @@ export const Contact = () => {
           Send me a message
         </h3>
         <a
-          className="container font-bold md:text-2xl lg:text-6xl"
+          className="container font-bold md:text-3xl lg:text-4xl"
           href="mailto:john.osezei@yahoo.com"
           target="_blank"
           rel="noreferrer"
@@ -27,7 +27,7 @@ export const Contact = () => {
         <h3 className="font-semibold mt-4 text-lg text-center">
           OR CONNECT WITH ME ON SOCIALS
         </h3>
-        <div className="w-max mr-auto ml-auto text-2xl">
+        <div className="w-max mt-4 mr-auto ml-auto text-2xl">
           <Socials />
         </div>
       </section>
