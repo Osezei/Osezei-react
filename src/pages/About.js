@@ -1,5 +1,6 @@
 import React from "react";
 import Papi from "../images/papi.jpeg";
+import Navigation from "../components/Navigation";
 
 export const About = () => {
   return (
@@ -7,11 +8,11 @@ export const About = () => {
       <div className="container grid justify-center">
         <h3 className="animate__animated animate__zoomIn heading">About</h3>
       </div>
-      <section className="container mt-6 md:block lg:grid grid-cols-2 gap-4 place-items-center h-56">
+      <section className="container mt-3 md:block lg:grid grid-cols-2 gap-4 place-items-center h-56 ">
         <div className="animate__animated animate__fadeInLeft papi-container">
           <img className="papi-x md: mb-8" src={Papi} alt="headboy" />
         </div>
-        <div className="animate__animated animate__fadeInRight text-lg">
+        <div className="animate__animated animate__fadeInRight text-lg pb-16 lg:pb-0">
           <p>
             I am a Frontend Developer able to build a Web presence from the
             ground concept, layout and UI to re-useable code, a goal-oriented
@@ -39,6 +40,7 @@ export const About = () => {
           </a>
         </div>
       </section>
+      <Navigation />
     </>
   );
 };

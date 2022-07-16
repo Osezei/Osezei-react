@@ -45,7 +45,7 @@ const Home = () => {
 
   return (
     <>
-      <section className="container md:block lg:flex justify-between mt-40">
+      <section className="container md:block lg:flex items-center justify-between mt-32">
         <div className="animate__animated animate__fadeInLeft text-[#81817c] text-2xl pr-8">
           <h3 className="text-2xl font-semibold">
             Hello, I'm{" "}

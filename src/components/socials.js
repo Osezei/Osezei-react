@@ -4,7 +4,7 @@ import { social } from "./navData";
 const Socials = () => {
   return (
     <section>
-      <ul className="flex mt-4 text-black">
+      <ul className="flex mt-2 text-black">
         {social.map((social) => {
           const { id, url, icon } = social;
           return (

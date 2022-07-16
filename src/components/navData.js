@@ -7,19 +7,16 @@ export const links = [
     id: 1,
     url: "/about",
     text: "about",
-    icon: <FaHome />,
   },
   {
     id: 2,
     url: "/projects",
     text: "projects",
-    icon: <FaUserFriends />,
   },
   {
     id: 3,
     url: "/contact",
     text: "contact",
-    icon: <FaUserFriends />,
   },
 ];
 

@@ -55,10 +55,10 @@ export const Projects = () => {
           return (
             <article
               key={id}
-              className="animate__animated animate__slideInUp mt-4"
+              className="animate__animated animate__slideInUp items-center"
             >
-              <div className="picture-container">
-                <img src={picture} className="picture" />
+              <div className="picture-container md:mt-6">
+                <img src={picture} className="picture mb-2" />
 
                 <a
                   href={url}
@@ -69,7 +69,7 @@ export const Projects = () => {
                 </a>
               </div>
               <a
-                className="font-semibold text-lg text-[black] hover:text-[#42423f]"
+                className="font-semibold text-lg text-[black] hover:underline"
                 target="_blank"
                 href={github}
               >

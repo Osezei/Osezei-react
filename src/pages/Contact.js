@@ -1,4 +1,5 @@
 import React from "react";
+import Navigation from "../components/Navigation";
 import Socials from "../components/socials";
 
 export const Contact = () => {
@@ -9,13 +10,13 @@ export const Contact = () => {
           <span className="opacity-50"> Con</span>tact
         </h3>
       </div>
-      <section className="animate__animated animate__fadeInUp container mt-20 grid justify-center">
+      <section className="animate__animated animate__fadeInUp container ">
         <div className="text-center">
-          <h3 className="text-xl font-bold mb-8 uppercase opacity-70">
+          <h3 className="text-xl font-bold mt-20 mb-8 uppercase opacity-70">
             Send me a message
           </h3>
           <a
-            className="text-6xl font-semibold"
+            className="sm: text-4xl md:text-4xl lg:text-6xl font-semibold"
             href="mailto:john.osezei@yahoo.com"
             target="_blank"
             rel="noreferrer"
@@ -32,6 +33,7 @@ export const Contact = () => {
           </div>
         </div>
       </section>
+      <Navigation />
     </>
   );
 };
