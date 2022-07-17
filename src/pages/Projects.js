@@ -43,13 +43,13 @@ const works = [
 ];
 export const Projects = () => {
   return (
-    <>
-      <div className="container text-center">
+    <section className="overflow-x-hidden">
+      <div className="container text-center ">
         <h3 className="animate__animated animate__zoomIn heading">
           <span className="opacity-50">Pro</span>jects
         </h3>
       </div>
-      <section className="container mt-6 md:block lg:grid grid-cols-2 gap-4 place-items-center h-56">
+      <section className="container mt-6 md:block lg:grid grid-cols-2 gap-4 place-items-center ">
         {works.map((work) => {
           const { id, stack, url, github, picture, title } = work;
           return (
@@ -86,6 +86,6 @@ export const Projects = () => {
       </section>
 
       <Navigation />
-    </>
+    </section>
   );
 };
