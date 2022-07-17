@@ -26,6 +26,9 @@ ul {
 a {
   text-decoration: none;
 }
+.mail {
+  word-wrap: break-word;
+}
 .home-img {
   width: 100%;
   border-radius: 50%;
